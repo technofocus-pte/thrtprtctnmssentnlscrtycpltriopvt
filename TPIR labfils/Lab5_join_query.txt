@@ -1,0 +1,47 @@
+_GetWatchlist('HighRiskApps')
+| join 
+(
+AuditLogs_CL
+| where OperationName has_any ("Add service principal", "Certificates and secrets management")
+| where Result_s =~ "success"
+| mv-expand target = todynamic(TargetResources_s)
+| where tostring(tostring(parse_json(tostring(parse_json(InitiatedBy_s).user)).userPrincipalName)) has "@" or tostring(parse_json(InitiatedBy_s).displayName) has "@"
+| extend targetDisplayName = tostring(parse_json(TargetResources_s)[0].displayName)
+| extend targetId = tostring(parse_json(TargetResources_s)[0].id)
+| extend targetType = tostring(parse_json(TargetResources_s)[0].type)
+| extend eventtemp = todynamic(TargetResources_s)
+| extend keyEvents = eventtemp[0].modifiedProperties
+| mv-expand keyEvents
+| where keyEvents.displayName =~ "KeyDescription"
+| extend set1 = parse_json(tostring(keyEvents.newValue))
+| extend set2 = parse_json(tostring(keyEvents.oldValue))
+| extend diff = set_difference(set1, set2)
+| where isnotempty(diff)
+| parse diff with * "KeyIdentifier=" keyIdentifier: string ",KeyType=" keyType: string ",KeyUsage=" keyUsage: string ",DisplayName=" keyDisplayName: string "]" *
+| where keyUsage == "Verify" or keyUsage == ""
+| extend AdditionalDetailsttemp = todynamic(AdditionalDetails_s)
+| extend UserAgent = iff(todynamic(AdditionalDetailsttemp[0]).key == "User-Agent", tostring(AdditionalDetailsttemp[0].value), "")
+| extend InitiatedByttemp = todynamic(InitiatedBy_s)
+| extend InitiatingUserOrApp = iff(isnotempty(InitiatedByttemp.user.userPrincipalName), tostring(InitiatedByttemp.user.userPrincipalName), tostring(InitiatedByttemp.app.displayName))
+| extend InitiatingIpAddress = iff(isnotempty(InitiatedByttemp.user.ipAddress), tostring(InitiatedByttemp.user.ipAddress), tostring(InitiatedByttemp.app.ipAddress))
+| project-away diff, set1, set2, eventtemp, AdditionalDetailsttemp, InitiatedByttemp
+| project-reorder
+  TimeGenerated,
+  OperationName,
+  InitiatingUserOrApp,
+  InitiatingIpAddress,
+  UserAgent,
+  targetDisplayName,
+  targetId,
+  targetType,
+  keyDisplayName,
+  keyType,
+  keyUsage,
+  keyIdentifier,
+  CorrelationId
+| extend
+  timestamp = TimeGenerated,
+  AccountCustomEntity = InitiatingUserOrApp,
+  IPCustomEntity = InitiatingIpAddress
+  ) on $left.AppName == $right.targetDisplayName
+| where HighRisk == "Yes"
