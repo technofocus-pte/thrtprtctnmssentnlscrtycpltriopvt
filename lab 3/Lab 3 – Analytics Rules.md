@@ -15,7 +15,7 @@ Microsoft Sentinel instance.
 ## Task 1: Analytics Rules overview
 
 1.  In the browser tab navigate to the Azure
-    Portal http://portal.azure.com and search for Microsoft Sentinel and
+    Portal http://portal.azure.com  and search for Microsoft Sentinel and
     click on **Microsoft Sentinel**.
 
 ![](./media/image1.png)
