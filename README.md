@@ -1,2 +1,2 @@
-# implmntngthrtprtctnmssntnlscrtycppvt
-Implementing Threat Protection with MS Sentinel and Security Copilot
+# thrtprtctnmssentnlscrtycpltriopvt
+AI-powered Threat Protection with Microsoft Sentinel and Security Copilot
