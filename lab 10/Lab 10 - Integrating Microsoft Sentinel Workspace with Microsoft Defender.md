@@ -35,33 +35,33 @@ portals in your incident investigation using Microsoft Security Copilot.
 
 ![](./media/image3.png)
 
-7.  In the **Microsoft Sentinel | Content hub** page search bar,
+4.  In the **Microsoft Sentinel | Content hub** page search bar,
     type **Microsoft Defender XDR** and press the enter button. Scroll
     down and select **Microsoft Defender XDR**.
 
 ![](./media/image4.png)
 
-8.  In **Microsoft Defender XDR** pane that appears on the right side,
+5.  In **Microsoft Defender XDR** pane that appears on the right side,
     navigate and click on **Install** button.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image5.png)
 
-9.  After the installation is successfully completed, select
+6.  After the installation is successfully completed, select
     again **Microsoft Defender XDR**, then click on
     the **Manage** button as shown in the below image.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image6.png)
 
-10. In **Microsoft Defender XDR** page, navigate and select the check
+7. In **Microsoft Defender XDR** page, navigate and select the check
     box of **Microsoft Defender XDR**, then click on **Open connector
     page** button.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image7.png)
 
-11. Scroll down to **Configuration** section. Ensure to check the box
+8. Scroll down to **Configuration** section. Ensure to check the box
     of **Turn off all Microsoft incident creation rules for these
     products**, then click on the **Connect incidents & alerts** button.
 
@@ -71,7 +71,7 @@ generated](./media/image8.png)
 ![A screenshot of a computer Description automatically
 generated](./media/image9.png)
 
-12. On the Microsoft XDR page, scroll down and Select all the Microsoft
+9. On the Microsoft XDR page, scroll down and Select all the Microsoft
     Defender XDR products except
 
 - Microsoft Defender for Cloud Apps (0/1 connected)​
@@ -107,38 +107,38 @@ generated](./media/image13.png)
 ![A screenshot of a computer Description automatically
 generated](./media/image16.png)
 
-7.  Select **swrkXXXXXXXX** workspace and click on the **Next** button.
+3.  Select **swrkXXXXXXXX** workspace and click on the **Next** button.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image17.png)
 
-8.  In the **Review changes** page, click on the **Connect** button.
+4.  In the **Review changes** page, click on the **Connect** button.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image18.png)
 
-9.  Wait for few minutes for the workspace to be successfully connected
+5.  Wait for few minutes for the workspace to be successfully connected
     to Microsoft 365 Defender. After workspace successfully connected,
     click on the **Close** button.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image19.png)
 
-10. Navigate and select **Microsoft Sentinel**, click on
+6. Navigate and select **Microsoft Sentinel**, click on
     **Configuration**, then click on **Analytics** as shown in the below
     image. You’ll see the Microsoft Sentinel Alerts in the Microsoft
     Defender portal.
 
 ![](./media/image20.png)
 
-11. Now, in the left-sided menu bar of Microsoft Defender portal, select
+7. Now, in the left-sided menu bar of Microsoft Defender portal, select
     **System**, click on **Settings** and then click on **Microsoft
     Sentinel**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image21.png)
 
-12. You’ll see the status of the Sentinel workspace.
+8. You’ll see the status of the Sentinel workspace.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image22.png)
