@@ -44,7 +44,7 @@ generated](./media/image2.png)
 3.  On **Set up your Copilot capacity** page, in the **Resource
     group** field, click on the dropdown and select **RG4Sentinel**.
     Then, in the Capacity name field, enter the capacity name (here, we
-    entered [**SCU4Sentinel**](urn:gd:lg:a:send-vm-keys)). In the Prompt
+    entered **SCU4Sentinel**. In the Prompt
     evaluation location field, click on the dropdown and select **United
     States (US)**.
 
@@ -67,8 +67,7 @@ generated](./media/image5.png)
 ![A screenshot of a computer Description automatically
 generated](./media/image6.png)
 
-7.  Again, in the Azure portal search bar, type [**Security Copilot
-    compute capacities**](urn:gd:lg:a:send-vm-keys), navigate and click
+7.  Again, in the Azure portal search bar, type +++**Security Copilot compute capacities**+++, navigate and click
     on it.
 
 ![A screenshot of a computer Description automatically
