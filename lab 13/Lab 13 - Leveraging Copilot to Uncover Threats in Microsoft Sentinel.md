@@ -60,8 +60,7 @@ generated](./media/image4.png)
 
 1.  Run to following prompt to investigate the incidents in sentinel.
 
-What Sentinel incidents have been created in the last 24 hours? List
-them with highest priority incidents at the top
++++What Sentinel incidents have been created in the last 24 hours? List them with highest priority incidents at the top+++
 
 ![](./media/image5.png)
 
@@ -77,10 +76,9 @@ them with highest priority incidents at the top
     therefore, keep the appropriate value of the IncidentNumber in the
     prompt)
 
-> Provide the list of entities associated with IncidentNumber 1 of
-> Microsoft Sentinel
->
-> ![](./media/image7.png)
++++Provide the list of entities associated with IncidentNumber 1 of Microsoft Sentinel+++
+
+![](./media/image7.png)
 
 4.  Carefully review the output.
 
@@ -93,8 +91,7 @@ generated](./media/image9.png)
 5.  Security copilot can summarize incidents to suit non-technical
     audiences as well, to get the summary run the following prompt.
 
-Write an executive report summarizing this investigation. It should be
-suited for a nontechnical audience.
++++Write an executive report summarizing this investigation. It should be suited for a nontechnical audience.+++
 
 ![A screenshot of a computer Description automatically
 generated](./media/image10.png)
@@ -181,7 +178,7 @@ generated](./media/image29.png)
 ![A screenshot of a computer Description automatically
 generated](./media/image30.png)
 
-Summary
+## Summary
 
 In this lab, you’ve enhanced your skills in utilizing Microsoft Security
 Copilot to manage and investigate security incidents effectively. You’ve
