@@ -1,4 +1,4 @@
-## Lab 10: Integrating Microsoft Sentinel Workspace with Microsoft Defender
+# Lab 10: Integrating Microsoft Sentinel Workspace with Microsoft Defender
 
 ## Introduction
 
