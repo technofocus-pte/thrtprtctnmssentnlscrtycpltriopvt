@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Microsoft Defender portal brings together a unified set of security
+Microsoft Defender portal brings together a unified set of security
 services to reduce your exposure to security threats, improve your
 organizational security posture, detect security threats, and
 investigate and respond to breaches. These services collect and produce
