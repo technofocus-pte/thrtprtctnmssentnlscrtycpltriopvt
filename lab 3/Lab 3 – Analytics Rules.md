@@ -42,6 +42,8 @@ Microsoft Sentinel instance.
 
 ![ computer ](./media/image6.png)
 
+Note: if Security Events via Legacy Agents filter is not found we can still continue with the next steps and search for the rule name.
+
 6.  In the rule search bar type Anomalous RDP Login for the rule name.
     Select the rule and open the side panel.
 
