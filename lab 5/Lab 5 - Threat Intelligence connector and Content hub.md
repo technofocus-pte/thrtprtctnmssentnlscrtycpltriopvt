@@ -336,6 +336,11 @@ ThreatIntelligenceIndicator | summarize count() by ThreatType
 
 ![](./media/image47.png)
 
+**Note**: if **Dynamics 365 CE Apps** is unavailable, then install **Microsoft Business Applications** and continue with the rest of the exercise.
+
+![image](https://github.com/user-attachments/assets/674fd21c-63ed-4b48-bca2-b2f0c6b24bb4)
+
+
 3.  Click on **Create**.
 
 ![](./media/image48.png)
