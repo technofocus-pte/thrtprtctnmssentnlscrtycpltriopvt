@@ -124,12 +124,6 @@ generated](./media/image18.png)
 ![A screenshot of a computer Description automatically
 generated](./media/image19.png)
 
-6. Navigate and select **Microsoft Sentinel**, click on
-    **Configuration**, then click on **Analytics** as shown in the below
-    image. You’ll see the Microsoft Sentinel Alerts in the Microsoft
-    Defender portal.
-
-![](./media/image20.png)
 
 7. Now, in the left-sided menu bar of Microsoft Defender portal, select
     **System**, click on **Settings** and then click on **Microsoft
